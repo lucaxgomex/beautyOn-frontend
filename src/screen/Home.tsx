@@ -28,15 +28,15 @@ export const HomePage = () => {
 
 
     return (
-        <ContainerHome>
-            {/* <ScrollView> */}
-
-            <Header title='Beauty On'>
-                <BarraPesquisa onSubmit={handleSubmit}/>
-            </Header>
-            <CardsContainer/>
-            {/* </ScrollView> */}
-        </ContainerHome>
+        /*<ContainerHome>*/
+        <SafeAreaView>
+            <ScrollView>
+                <Header title='Beauty On'>
+                    <BarraPesquisa onSubmit={handleSubmit}/>
+                </Header>
+                <CardsContainer/>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
